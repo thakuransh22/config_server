@@ -1,11 +1,28 @@
-server:
-  port: 8080
 
 spring:
   application:
     name: greek-servers
+  boot:
+    admin:
+      client:
+        url: http://localhost:2222
+  config:
+    import:
+    - "configserver:http://localhost:8888"
+
+server:
+  port: 9091
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
