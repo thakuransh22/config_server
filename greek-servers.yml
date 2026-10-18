@@ -6,9 +6,6 @@ spring:
     admin:
       client:
         url: http://localhost:2222
-  config:
-    import:
-    - "configserver:http://localhost:8888"
 
 server:
   port: 9091
