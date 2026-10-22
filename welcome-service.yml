@@ -5,7 +5,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:2222
+        url: "http://localhost:2222"
 
 server:
   port: 8081
