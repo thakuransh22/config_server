@@ -4,7 +4,8 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:2222
+        url: 
+          http://localhost:2222
         instance:
           service-host-type: IP
 
