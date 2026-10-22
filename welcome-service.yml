@@ -1,14 +1,13 @@
-
 spring:
   application:
     name: welcome-service
   boot:
     admin:
       client:
-        url:
+        url: 
           http://localhost:2222
         instance:
-          service-host-type:IP
+          service-host-type: IP
 
 server:
   port: 8081
@@ -18,7 +17,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    hostname: localhost
     prefer-ip-address: true
 
 management:
