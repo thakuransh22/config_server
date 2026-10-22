@@ -1,6 +1,6 @@
 spring:
   application:
-    name: greek-servers
+    name: greet-service
   boot:
     admin:
       client:
