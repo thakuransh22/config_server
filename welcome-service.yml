@@ -24,3 +24,5 @@ management:
     web:
       exposure:
         include: health,info,refresh
+welcome:
+  message: Hello from GitHub configuration
